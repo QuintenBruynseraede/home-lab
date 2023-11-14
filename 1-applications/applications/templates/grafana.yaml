@@ -11,7 +11,7 @@ spec:
     chart: grafana
     targetRevision: 7.0.4
     helm:
-      values: 
+      values: |
         foo: bar
         replicas: 5
   destination:
