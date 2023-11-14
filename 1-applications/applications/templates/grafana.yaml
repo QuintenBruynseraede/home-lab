@@ -12,8 +12,7 @@ spec:
     targetRevision: 7.0.4
     helm:
       values: |
-        foo: bar
-        replicas: 5
+        replicas: 1
   destination:
     namespace: grafana
     server: https://kubernetes.default.svc
