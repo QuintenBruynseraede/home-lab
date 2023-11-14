@@ -11,8 +11,8 @@ spec:
     chart: grafana
     targetRevision: 7.0.4
     helm:
-      valueFiles:
-      - ../values/values-grafana.yaml
+      values: |
+{{ .Files.Get "../values/values-grafana.yaml" | indent 8 }}
 
   destination:
     namespace: grafana
