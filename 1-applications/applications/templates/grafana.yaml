@@ -11,8 +11,9 @@ spec:
     chart: grafana
     targetRevision: 7.0.4
     helm:
-      values: |
-{{ .Files.Get "../values/values-grafana.yaml" | indent 8 }}
+      values: 
+        foo: bar
+        replicas: 5
   destination:
     namespace: grafana
     server: https://kubernetes.default.svc
