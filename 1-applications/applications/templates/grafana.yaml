@@ -9,6 +9,7 @@ spec:
   source:
     repoURL: https://github.com/grafana/helm-charts.git
     chart: grafana
+    path: charts/grafana
   destination:
     namespace: grafana
   project: default
