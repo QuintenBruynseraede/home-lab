@@ -7,8 +7,9 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   source:
-    repoURL: https://github.com/grafana/helm-charts.git
+    repoURL: https://grafana.github.io/helm-charts
     chart: grafana
+    targetRevision: 7.0.4
   destination:
     namespace: grafana
     server: https://kubernetes.default.svc
