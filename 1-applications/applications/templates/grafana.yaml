@@ -13,7 +13,6 @@ spec:
     helm:
       values: |
 {{ .Files.Get "../values/values-grafana.yaml" | indent 8 }}
-
   destination:
     namespace: grafana
     server: https://kubernetes.default.svc
